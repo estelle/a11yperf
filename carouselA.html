@@ -1,0 +1,58 @@
+<style>
+b {color:  #226DAA;}
+pre {
+  text-align: left;
+  background: 
+    linear-gradient(to top, rgba(34, 109, 170, 0.2) 50%, rgba(255,255,255,0.5) 50%);
+  
+  tab-size: 1.5em;
+  background-attachment: local; background-position: 0 -4vh;
+  background-size: 200vw 8vh;  width: 200vw;
+  line-height: 4vh;  
+  font-size: 3.3vh; 
+}
+</style>
+<pre><!--&lt;form action="index.html">
+--><b>&lt;fieldset</b> class="mgr" id="address">
+<b>&lt;legend>Select an address to edit:&lt;/legend></b>
+&lt;div>
+  &lt;a class="backward" data-move="backward" data-mgr="shipping-addresses" hidden>&lt;/a>
+  &lt;ul class="mgr-labels left0">
+    &lt;li>
+      <b>&lt;label for="address1"></b>
+      Instart Logic&lt;br/>
+      US Headquarters&lt;br/>
+      450 Lambert Avenue&lt;br/>
+      Palo Alto, CA 94306
+      &lt;/label>
+    &lt;/li>
+    &lt;li>
+      &lt;label for="address2">
+      Instart Logic&lt;br/>
+      India Office&lt;br/>
+      6th Floor , HM Vibha Towers&lt;br/>
+      Hosur Rd, Adugodi&lt;br/>
+      Bengaluru — 560029
+      &lt;/label>
+    &lt;/li>...
+  &lt;/ul>
+  &lt;a class="forward" data-move="forward" data-mgr="shipping-addresses" hidden>&lt;/a>
+  &lt;/div>
+  &lt;ul id="addressradios" class="mgr-radios">
+    &lt;li>
+      <b>&lt;input type="radio" name="shipping-addresses" data-value="0" id="address1" checked>&lt;span>&lt;/span></b>
+    &lt;/li>
+    &lt;li>
+      &lt;input type="radio" name="shipping-addresses" data-value="1" id="address2">&lt;span>&lt;/span>
+    &lt;/li>...
+  &lt;/ul>
+  &lt;/fieldset><!--
+ &lt;input type="submit" value="Edit">
+&lt;/form>
+&lt;script src="js/merry-go-round.js">&lt;/script>
+&lt;script>
+window.onload = function () {
+  mgr.init('address');
+};
+&lt;/script>--></pre>
+
