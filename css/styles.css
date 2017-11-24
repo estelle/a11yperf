@@ -99,7 +99,7 @@ header, section {
   padding: 1em;
   box-sizing: border-box; }
   .divider * {
-    color: #fff; }
+    color: #ffffff; }
 
 .slide .counter {
   color: #999999;
@@ -274,7 +274,7 @@ pre {
   pre b, pre em {
     font-weight: normal;
     font-style: normal;
-    color: #f00; }
+    color: #ff0000; }
   pre.allcode {
     height: 90vh; }
 
