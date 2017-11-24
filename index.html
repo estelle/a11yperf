@@ -10,7 +10,7 @@ Based on: http://estelle.github.com/slides
 -->    
 <link rel="stylesheet"  class="removeForAT" href="css/styles.css">
 <style>
-pre {padding-top: 1.8vh;line-height: 4vh; background-size: 100% 8vh; font-size: 3.5vh; position: relative; top: -10px;}
+pre {padding-top: 1.8vh; position: relative; top: -10px;}
 .tweet .content{
   display: flex;
   align-content: center;
@@ -44,10 +44,10 @@ object.enlarge {
 
   <div class="slide intro">
     <section class="content">
-    <h1 style="font-size: 3rem; margin-top: 10%;">Inclusive Markup</h1>
+    <h1 style="font-size: 3rem; margin-top: 10%;">Accessibility as Performance</h1>
       <h2>Estelle Weyl</h2>
-      <p><a href="http://estelle.github.io/id24/
-">http://estelle.github.io/id24/
+      <p><a href="http://estelle.github.io/a11yperf/
+">http://estelle.github.io/a11yperf/
 
 </a></p>
 <button id="killCSS" class="skiplink">Enable Screen Reader Access</button>
@@ -75,23 +75,14 @@ object.enlarge {
 </div>
 
 
-<div class="slide intro">
-<header><h1 aria-label="Using Web Standards for Accessibility and Performance" onmouseover="this.innerHTML
- = 'Accessibility and Performance with Web Standards';"
- onmouseout="this.innerHTML
- = 'Inclusive Markup';"
- >Inclusive Markup.</h1></header>
-
-  <table cellpadding="0" cellspacing="0" align="center">
-  	<tr>
-  	<td style="border-bottom: 5px solid #226daa; width: 25vw; height: 20vh;">Issues</td>
-  	<td style="border-left: 5px solid #226daa;  border-bottom:5px solid #226daa; ">Prescriptions</td>
-  	</tr>
-  	<tr>
-  	<td>Features</td>
-  	<td style="border-left: 5px solid #226daa; width: 25vw; height: 20vh;">Solutions</td>
-  	</tr>
-  </table>
+<div class="slide divider">
+<header><h1>Performance &amp; Accessibility</h1></header>
+<ol>
+  <li>Issues</li>
+  <li>Prescriptions</li>
+  <li>Features</li>
+  <li>Solutions</li>
+</ol>
 
 </div>
 
@@ -245,32 +236,7 @@ object.enlarge {
 
 
 <!-- table of 2017 - 2010 -->
-<style>
-   .comparisonTable {
-      border-spacing: 0.2em;
-      caption-side: top;
-   }
-   .comparisonTable th {
-    text-align: left;
-    padding-left: 1em;
-   }
-   .comparisonTable td,
-   .comparisonTable thead th:not(:first-of-type) {
-      text-align: right;
-      padding-right: 1em;
-   }
-   .comparisonTable col:first-of-type,
-   .comparisonTable tr:hover {
-      background-color: #ddd; 
-      width: 8em;
-   }
-   .comparisonTable thead,
-   .comparisonTable tfoot {
-      background-color: #ddf; 
-   }
-   .comparisonTable col {}
-   .comparisonTable caption {font-size: large;}
-</style>
+
 <div class="slide">
   <header><h1>Comparison Table</h1></header>
   <section class="content">
@@ -409,12 +375,7 @@ object.enlarge {
 </div>
 
 
-<!-- you don't need a framework -->
-<div class="slide object">
-  
-  <object data="http://estelle.github.io/jsframeworks/" style="max-height: 90vh; max-width: 90vw; border: 5px solid black; margin: auto;margin: 5vh 5vw;"></object>
-  <a href="http://estelle.github.io/jsframeworks/" class="objectlink">Open talk</a>
-</div>
+
 
 
 
@@ -667,9 +628,9 @@ Content interprable by UAs, including AT.</p>
 <div class="slide">
 <header><h1>Tips</h1></header>
 <section>
-<p class="temphidden">UA Sniffing ≠ AT Sniffing</p>
-<p class="temphidden">Managing focus is required. Has to be added with JavaScript</p>
 <p class="temphidden">Use browser defaults as much as possible</p>
+<p class="temphidden">Managing focus is required. Has to be added with JavaScript</p>
+<p class="temphidden">UA Sniffing ≠ AT Sniffing</p>
 </section>
 </div>
 
@@ -757,7 +718,12 @@ background-size: cover;" aria-label="Image of bay bridge's scaffolding">
 <header><h1>Solutions</h1></header>
 </div>
 
-
+<!-- you don't need a framework -->
+<div class="slide object">
+  
+  <object data="http://estelle.github.io/jsframeworks/" style="max-height: 90vh; max-width: 90vw; border: 5px solid black; margin: auto;margin: 5vh 5vw;"></object>
+  <a href="http://estelle.github.io/jsframeworks/" class="objectlink">Open talk</a>
+</div>
 <div class="slide object" style="padding-top: 100px;"> 
 <header><h1>My First Framework</h1></header> 
 <object data="http://estelleweyl.com/portfolio/kodak.html"></object>
@@ -895,6 +861,10 @@ function setClass(objectID,newClass) {
   &lt;/span></b>
 &lt;/li></pre>
 
+</div>
+
+
+<div class="slide"> 
 <p>on data entry...<span style="position: relative; top: -0.5em;display: inline-block; background-color: rgba(0, 0, 255,  0.1);font-size: 1em; width: 5em;"><i style=" background-color: rgba( 255,0,0,  0.1)">123</i>XX<input value="123" style="position: absolute; top: 50%; left: 0; font-size: 1em; background: rgba(0,255,0,0.1); width: 5em;"></span>&nbsp;&nbsp;<span style="position: relative; display: inline-block; background-color: rgba(0, 0, 255,  0.1);font-size: 1em; width: 5em;"><i style=" background-color: rgba( 255,0,0,  0.1); opacity: 0.3">123</i>XX<input value="123" style="position: absolute; top: 0; left: 0; font-size: 1em; background: rgba(0,255,0,0.1); width: 5em;"></span></p>
 
 <pre contenteditable>&lt;li>
@@ -907,8 +877,6 @@ function setClass(objectID,newClass) {
   &lt;/span>
 &lt;/li>
 </pre></div>
-
-
 
 <div class="slide">
 <header><h1>Create the Mask</h1></header>
