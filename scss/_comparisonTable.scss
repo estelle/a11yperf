@@ -1,0 +1,24 @@
+.comparisonTable {
+      border-spacing: 0.2em;
+      caption-side: top;
+    th {
+    text-align: left;
+    padding: 0 1em;
+   }
+    td,
+    thead th:not(:first-of-type) {
+      text-align: right;
+      padding: 0 1em;
+   }
+    col:first-of-type,
+    tr:hover {
+      background-color: #ddd; 
+      width: 10em;
+   }
+    thead,
+    tfoot {
+      background-color: #ddf; 
+   }
+    col {width: 6em;}
+    caption {font-size: large;}
+}
