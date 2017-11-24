@@ -869,11 +869,11 @@ function setClass(objectID,newClass) {
 
 <pre contenteditable>&lt;li>
   &lt;label for="zip">Zip Code&lt;/label>
-  &lt;span class="shell">
+  &lt;span class="<b>shell</b>">
     <b>&lt;span aria-hidden="true" id="zipMask"><u>&lt;i>123&lt;/i>XX</u>&lt;/span></b>
     &lt;input id="zip" type="tel" name="zipcode" pattern="\d{5}" 
     class="masked" title="5-digit zip code" maxlength="5" placeholder="XXXXX"
-     aria-label="Zip Code: 5-digit zip code">
+     <b>aria-label="Zip Code: 5-digit zip code"</b>>
   &lt;/span>
 &lt;/li>
 </pre></div>
@@ -942,7 +942,7 @@ function setClass(objectID,newClass) {
       <ul>
         <li>aria-labeledby="otherElement idValues"</li>
         <li>aria-label="Read by Screen Reader"</li>
-        <li>&lt;label for="idOfFormControl"> (or implicit label)</li>
+        <li><b style="color: #226DAA">&lt;label for="idOfFormControl"> (or implicit label)</b></li>
         <li>placeholder</li>
         <li>title</li>
         <li>not accessible</li>
@@ -990,12 +990,32 @@ function setClass(objectID,newClass) {
 
 
 
+
+
 <div class="slide object">
 <object data="carouselA.html"></object>
 <img src="assets/images/carousel-carousel.png"  class="bytes" alt="Carousel script is 1.1kb">
 </div>
 
+<!--  -->
+<div class="slide">
+  <header><h1></h1></header>
+  <section class="content" style="font-size: 1em">
+    <pre contenteditable>&lt;<b>fieldset</b>>
+&lt;<b>legend</b>>Select an address to edit:&lt;/<b>legend</b>>
+  &lt;ul class="left0">
+    &lt;li>
+      &lt;<b>label for</b>="address1">....&lt;/<b>label</b>>
+      ...
 
+  &lt;ul id="addressradios">
+    &lt;li>
+      &lt;<b>input</b> type="radio" name="shipping-addresses" data-value="0" <b>id="address1"</b> checked>
+    ...
+&lt;/<b>fieldset</b>>
+  </pre>     
+  </section>
+</div>
 
 
 
@@ -1255,26 +1275,23 @@ function setClass(objectID,newClass) {
 
 
 <div class="slide">
-<pre>footer {
-  &.open {
-    height: 168px; 
-  }
-  &.closed fieldset {
-    <b>transform: scale(1,0); </b>
-  }
-  fieldset {
-    <b>input[type=radio], legend </b>{
-    opacity: 0.01;
-    position: absolute; right: 0px;
-  }
-    <b>label:active,
-    label:focus,
-    label:hover,
-    :checked + label</b> {
-      outline: 1px dotted $white;
-      background-color: $mediumLightGray;
-    }
-  }
+<pre>footer.open {
+  height: 168px; 
+}
+footer.closed fieldset {
+  <b>transform: scale(1,0); </b>
+}
+footer <b>input[type=radio]</b>, 
+footer <b>legend </b>{
+  opacity: 0.01;
+  position: absolute; right: 0px;
+}
+footer <b>label:active</b>,
+footer <b>label:focus</b>,
+footer <b>label:hover</b>,
+footer <b>:checked + label</b> {
+  outline: 1px dotted $white;
+  background-color: $mediumLightGray;
 }</pre>
 </div>
 

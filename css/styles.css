@@ -94,6 +94,13 @@ header, section {
   left: 0;
   transition: all 0.25s ease-in-out; }
 
+.divider {
+  background-color: #226DAA;
+  padding: 1em;
+  box-sizing: border-box; }
+  .divider * {
+    color: #fff; }
+
 .slide .counter {
   color: #999999;
   position: absolute;
@@ -248,32 +255,26 @@ pre {
   padding: 10px 20px;
   border-radius: 8px;
   background: linear-gradient(to top, #eaf3fb 50%, #FFF 50%);
-  background-position: 0 1.8rem;
+  background-position: 1.8em 1.8em;
   background-clip: padding-box;
   background-attachment: local;
   width: 98%;
   margin: 0 1vw 20px;
   overflow: scroll;
-  font-size: 1.4rem;
+  font-size: 1.5em;
   box-sizing: border-box;
-  padding-top: 1.8vh;
-  line-height: 4vh;
-  background-size: 100% 8vh;
-  font-size: 3.5vh;
+  padding-top: 1.8em;
+  background-size: 100% 2.8em;
   position: relative;
   top: -10px;
-  border: 1px solid #ccc; }
+  border: 1px solid #ccc;
+  line-height: 1.4em;
+  max-height: 90vh;
+  overflow-y: scroll; }
   pre b, pre em {
     font-weight: normal;
     font-style: normal;
-    color: #226DAA;
-    font-weight: bold;
-    transition: 200ms; }
-    pre b:hover, pre em:hover {
-      display: inline-block;
-      transform: scale(1.5);
-      background-color: rgba(255, 255, 255, 0.8);
-      transform-origin: left center; }
+    color: #f00; }
   pre.allcode {
     height: 90vh; }
 
@@ -583,6 +584,28 @@ li {
       left: 0%;
       width: 1vw;
       height: 1vw; }
+
+.comparisonTable {
+  border-spacing: 0.2em;
+  caption-side: top; }
+  .comparisonTable th {
+    text-align: left;
+    padding: 0 1em; }
+  .comparisonTable td,
+  .comparisonTable thead th:not(:first-of-type) {
+    text-align: right;
+    padding: 0 1em; }
+  .comparisonTable col:first-of-type,
+  .comparisonTable tr:hover {
+    background-color: #ddd;
+    width: 10em; }
+  .comparisonTable thead,
+  .comparisonTable tfoot {
+    background-color: #ddf; }
+  .comparisonTable col {
+    width: 6em; }
+  .comparisonTable caption {
+    font-size: large; }
 
 @media print {
   .slide {
